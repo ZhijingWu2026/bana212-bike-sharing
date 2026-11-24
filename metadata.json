@@ -1,0 +1,39 @@
+{
+  "python": "3.13.14",
+  "sklearn": "1.9.1",
+  "dataset_sha256": "e03de4ee4ef4dc376ac6e04bf829673c6269e8eba5c60fa121640fa2f829504f",
+  "notebook_sha256": "bb945fdc1825e8593718e1b44bc97379da35dbb8925bb0d510aaecba4cd9f78b",
+  "training_rows": 13003,
+  "validation_rows": 2208,
+  "test_rows": 2168,
+  "peak_threshold": 441.0,
+  "rmse_improvement": 20.37880720650344,
+  "parameters": {
+    "Historical Average": {
+      "grouping": [
+        "workingday",
+        "hr"
+      ],
+      "fallback": "pre-test overall mean"
+    },
+    "Linear Regression": {
+      "fit_intercept": true,
+      "negative_predictions": "clipped to zero",
+      "tuning": "none"
+    },
+    "Random Forest": {
+      "n_estimators": 100,
+      "max_depth": null,
+      "min_samples_leaf": 2,
+      "random_state": 42
+    }
+  },
+  "validation_depths": {
+    "10": 127.45182760030823,
+    "None": 105.9971835585972
+  },
+  "reference_predictions": {
+    "recorded_rf": 621.4782301587302,
+    "hour14_rf": 114.05595238095239
+  }
+}
